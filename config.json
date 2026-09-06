@@ -1,0 +1,48 @@
+{
+  "general": {
+    "autostart": true,
+    "language": "zh-CN",
+    "repo_url": "https://github.com/Ecila01/game-codes-repo"
+  },
+  "data_sources": [
+    {
+      "name": "github-primary",
+      "type": "github_raw",
+      "url": "https://raw.githubusercontent.com/Ecila01/game-codes-repo/main/codes.json",
+      "enabled": true
+    },
+    {
+      "name": "jsdelivr-mirror",
+      "type": "github_raw",
+      "url": "https://cdn.jsdelivr.net/gh/Ecila01/game-codes-repo@main/codes.json",
+      "enabled": true
+    }
+  ],
+  "fetch": {
+    "interval_minutes": 30,
+    "timeout_seconds": 10,
+    "max_retries": 3,
+    "daily_check_time": "12:00",
+    "check_on_startup": true
+  },
+  "notify": {
+    "enabled": true,
+    "on_new_codes": true,
+    "on_fetch_error": false,
+    "daily_summary": true
+  },
+  "ui": {
+    "opacity": 0.95,
+    "scale": 1.0,
+    "always_on_top": true,
+    "snap_enabled": true,
+    "snap_threshold_px": 24,
+    "edge_margin_px": 8,
+    "compact_visible_count": 3,
+    "bubble_seconds": 5,
+    "expanded_size": [380, 580]
+  },
+  "cache": {
+    "max_expired_days": 30
+  }
+}

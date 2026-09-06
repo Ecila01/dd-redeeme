@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+.venv/
+
+# 运行时产物
+cache/
+logs/
+config.json.bak
+cache.json.bak
+last_bad_response.txt
+
+# 打包与发布（产物不入库，脚本入库）
+build/
+dist/
+release/
+DDRedeeMe.spec.bak
+
+# 编辑器
+.vscode/
+.idea/
+
+# 本地工程文档（设计/可行性/实施任务书/路线图，不上传）
+/docs/
