@@ -56,7 +56,7 @@ dd-redeeme/
 │   ├── main.py            # 入口（AppUserModelID / 日志 / 装配）
 │   ├── service.py         # CodeService：业务编排，UI 与逻辑唯一桥梁
 │   ├── core/              # models / config / fetcher / parser / cache / notifier / scheduler
-│   └── ui/                # widget / tray（M2、M3 实现）
+│   └── ui/                # widget / tray（挂件与托盘界面）
 └── tests/                 # parser / cache-diff 单元测试
 ```
 
